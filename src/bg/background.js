@@ -2,7 +2,7 @@
 chrome.extension.onMessage.addListener(
   function(request, sender, sendResponse) {
   	console.log(request);
-	_gaq.push(['_trackEvent', request.aevent, 'clicked']);
+	_gaq.push(['_trackEvent', request.analytics_event, 'clicked']);
     sendResponse();
   }
 );
